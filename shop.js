@@ -14,7 +14,7 @@ async function loadProducts() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/products"
+            "https://imenart.onrender.com/api/products"
         );
 
         if (!response.ok) {

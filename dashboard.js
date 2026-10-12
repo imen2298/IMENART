@@ -285,8 +285,8 @@ if (artworkForm) {
 
             // URL
             const url = isEditMode
-                ? `http://localhost:5000/api/products/${id}`
-                : "http://localhost:5000/api/products";
+                ? `https://imenart.onrender.com/api/products/${id}`
+                : "https://imenart.onrender.com/api/products";
 
             // Méthode HTTP
             const method = isEditMode
@@ -398,7 +398,7 @@ async function loadArtworks() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/products"
+            "https://imenart.onrender.com/api/products"
         );
 
 
@@ -447,7 +447,7 @@ async function editArtwork(id) {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/products/${id}`
+            `https://imenart.onrender.com/api/products/${id}`
         );
 
         const product = await response.json();
@@ -535,7 +535,7 @@ async function deleteArtwork(id) {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/products/${id}`,
+            `https://imenart.onrender.com/api/products/${id}`,
             {
                 method: "DELETE",
 
@@ -740,7 +740,7 @@ async function loadOrders() {
 
     try {
         const response = await fetch(
-            "http://localhost:5000/api/admin/orders",
+            "https://imenart.onrender.com/api/admin/orders",
             {
                 method: "GET",
                 headers: {
@@ -902,7 +902,7 @@ document.addEventListener("click", async function (event) {
 
     try {
         const response = await fetch(
-            `http://localhost:5000/api/admin/orders/${orderId}`,
+            `https://imenart.onrender.com/api/admin/orders/${orderId}`,
             {
                 method: "GET",
                 headers: {
@@ -1011,7 +1011,7 @@ document.addEventListener("click", async function (event) {
 
     try {
         const response = await fetch(
-            `http://localhost:5000/api/admin/orders/${orderId}/status`,
+            `https://imenart.onrender.com/api/admin/orders/${orderId}/status`,
             {
                 method: "PATCH",
                 headers: {

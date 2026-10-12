@@ -50,7 +50,7 @@ function displayCart() {
         cartItemsContainer.innerHTML += `
             <div class="cart-item">
                 <img
-                    src="http://localhost:5000/uploads/${product.image}"
+                    src="https://imenart.onrender.com/uploads/${product.image}"
                     alt="${product.title}"
                 >
 
@@ -172,7 +172,7 @@ async function submitOrder(event) {
     showFormMessage("Sending your order...");
 
     try {
-        const response = await fetch("http://localhost:5000/api/orders", {
+        const response = await fetch("https://imenart.onrender.com/api/orders", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

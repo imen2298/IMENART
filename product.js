@@ -12,7 +12,7 @@ async function loadProduct() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/products/${productId}`
+            `https://imenart.onrender.com/api/products/${productId}`
         );
 
         if (!response.ok) {
@@ -50,7 +50,7 @@ function displayProduct(product) {
         <div class="product-detail-image">
 
             <img
-                src="http://localhost:5000/uploads/${product.image}"
+                src="https://imenart.onrender.com/uploads/${product.image}"
                 alt="${product.title}"
             >
 
