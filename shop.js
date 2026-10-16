@@ -75,6 +75,8 @@ function displayProducts(products) {
                     <img
                         src="${product.image}"
                         alt="${product.title}"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <span class="${statusClass}">
