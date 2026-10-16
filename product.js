@@ -50,8 +50,10 @@ function displayProduct(product) {
         <div class="product-detail-image">
 
             <img
-                src="https://imenart.onrender.com/uploads/${product.image}"
+                src="${product.image}"
                 alt="${product.title}"
+                loading="eager"
+                decoding="async"
             >
 
         </div>
