@@ -1374,3 +1374,46 @@
    Responsive : ordinateur, tablette et mobile
 ========================================= */
 
+/* BACK TO SHOP */
+
+.back-to-shop {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 70px;
+
+  text-decoration: none;
+  color: inherit;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition: opacity 0.3s ease;
+}
+
+.back-to-shop:hover {
+  opacity: 0.55;
+}
+
+/* RESPONSIVE : TABLETTE ET MOBILE */
+
+@media (max-width: 768px) {
+  .back-to-shop {
+    gap: 8px;
+    margin-bottom: 40px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-shop {
+    gap: 6px;
+    margin-bottom: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+
