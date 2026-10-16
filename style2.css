@@ -1374,46 +1374,60 @@
    Responsive : ordinateur, tablette et mobile
 ========================================= */
 
-/* BACK TO SHOP */
+
+/* =========================================
+   BACK TO SHOP - Bouton sous la navigation
+========================================= */
 
 .back-to-shop {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+    position: relative;
+    z-index: 10;
 
-  margin-top: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-  text-decoration: none;
-  color: inherit;
+    margin: 20px 0 25px;
+    padding: 10px 16px;
 
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    color: #87123b;
+    background: transparent;
+    border: 1px solid #87123b;
+    border-radius: 30px;
 
-  transition: opacity 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
 }
 
 .back-to-shop:hover {
-  opacity: 0.55;
+    background-color: #87123b;
+    color: #fff;
+    transform: translateX(-3px);
 }
 
-/* RESPONSIVE : TABLETTE ET MOBILE */
-
+/* Tablettes */
 @media (max-width: 768px) {
-  .back-to-shop {
-    gap: 8px;
-    margin-bottom: 40px;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-  }
+    .back-to-shop {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 9px 14px;
+        font-size: 13px;
+    }
 }
 
+/* Téléphones */
 @media (max-width: 480px) {
-  .back-to-shop {
-    gap: 6px;
-    margin-bottom: 30px;
-    font-size: 10px;
-    letter-spacing: 1px;
-  }
+    .back-to-shop {
+        margin-top: 12px;
+        margin-bottom: 16px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
 }
 
