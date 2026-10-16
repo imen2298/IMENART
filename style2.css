@@ -1385,7 +1385,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 100px;
+  margin-top: 100px;
   margin: 110px 0 25px; /* Descendre le bouton sous la navbar */
   padding: 10px 16px;
 
