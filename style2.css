@@ -1375,18 +1375,19 @@
 ========================================= */
 
 
-/* =========================================
-   BACK TO SHOP - Bouton sous la navigation
-========================================= */
 
+/* =========================================
+   BACK TO SHOP - Bouton sous la navbar
+========================================= */
 
 .back-to-shop {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 100px;
-  margin: 110px 0 25px; /* Descendre le bouton sous la navbar */
+
+  /* Haut | Droite et gauche | Bas */
+  margin: 25px 0 20px;
   padding: 10px 16px;
 
   color: #87123b;
@@ -1404,7 +1405,7 @@
     transform 0.3s ease;
 }
 
-/* Effet au survol sur ordinateur */
+/* Effet au survol */
 .back-to-shop:hover {
   background-color: #87123b;
   color: #ffffff;
@@ -1414,8 +1415,8 @@
 /* Tablettes */
 @media (max-width: 768px) {
   .back-to-shop {
+    margin: 20px 0 16px;
     gap: 8px;
-    margin-bottom: 20px;
     padding: 9px 14px;
     font-size: 13px;
   }
@@ -1424,10 +1425,11 @@
 /* Téléphones */
 @media (max-width: 480px) {
   .back-to-shop {
+    margin: 15px 0 12px;
     gap: 7px;
-    margin-bottom: 16px;
     padding: 8px 12px;
     font-size: 12px;
   }
 }
+
 
