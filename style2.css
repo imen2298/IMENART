@@ -1386,8 +1386,8 @@
   justify-content: center;
   gap: 10px;
 
-  /* Haut | Droite et gauche | Bas */
-  margin: 25px 0 20px;
+  /* Espace suffisant en haut pour descendre sous la navbar arrondie */
+  margin: 35px 0 20px 0; 
   padding: 10px 16px;
 
   color: #87123b;
@@ -1415,7 +1415,7 @@
 /* Tablettes */
 @media (max-width: 768px) {
   .back-to-shop {
-    margin: 20px 0 16px;
+    margin: 25px 0 16px 0;
     gap: 8px;
     padding: 9px 14px;
     font-size: 13px;
@@ -1425,7 +1425,7 @@
 /* Téléphones */
 @media (max-width: 480px) {
   .back-to-shop {
-    margin: 15px 0 12px;
+    margin: 20px 0 12px 0;
     gap: 7px;
     padding: 8px 12px;
     font-size: 12px;
