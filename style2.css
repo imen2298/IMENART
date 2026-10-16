@@ -1381,7 +1381,7 @@
 ========================================= */
 .cart-main {
   /* Dégage l'espace nécessaire sous la navbar flottante/fixe */
-  padding-top: 120px !important; 
+  padding-top: 20px !important; 
 }
 .back-to-shop {
   position: relative !important;
