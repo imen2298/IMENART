@@ -106,7 +106,7 @@ function displayProducts(products) {
                     <div class="product-price">
 
                         <span>
-                            ${Number(product.price).toFixed(2)} €
+                            ${Number(product.price).toFixed(2)} DA
                         </span>
 
                         <button
