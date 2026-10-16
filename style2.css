@@ -574,7 +574,7 @@
     line-height: 1.2;
     margin: 0.25rem 0;
     overflow-wrap: break-word;
-     color: #2a5a5e;
+    color: #2a5a5e!important;
   }
 
   .product-info p {
@@ -597,7 +597,7 @@
   .product-price > span {
     font-size: 0.62rem;
     white-space: nowrap;
-     color: #2a5a5e;
+    color: #2a5a5e !important;
   }
 
   .product-price button {
