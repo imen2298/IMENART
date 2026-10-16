@@ -1387,8 +1387,9 @@
   gap: 10px;
 
   /* Espace suffisant en haut pour descendre sous la navbar arrondie */
-  margin: 35px 0 20px 0; 
-  padding: 10px 16px;
+ margin-top: 100px; /* Ajustez cette valeur (par exemple 100px ou 120px) selon la hauteur de votre navbar */
+  padding: 0 20px;   /* Si vous avez besoin de marges sur les côtés */
+
 
   color: #87123b;
   background: transparent;
