@@ -1379,17 +1379,23 @@
 /* =========================================
    BACK TO SHOP - Bouton sous la navbar
 ========================================= */
-
+.cart-main {
+  /* Dégage l'espace nécessaire sous la navbar flottante/fixe */
+  padding-top: 120px !important; 
+}
 .back-to-shop {
-  display: inline-flex;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   gap: 10px;
 
-  /* Espace suffisant en haut pour descendre sous la navbar arrondie */
- margin-top: 500rem; /* Ajustez cette valeur (par exemple 100px ou 120px) selon la hauteur de votre navbar */
-  padding: 0 20px;   /* Si vous avez besoin de marges sur les côtés */
-
+  /* Marges : haut (10px) | droite/gauche (0) | bas (20px) */
+  margin: 10px 0 20px 0 !important;
+  padding: 10px 16px;
 
   color: #87123b;
   background: transparent;
@@ -1399,38 +1405,6 @@
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s ease;
+  z-index: 10;
 }
-
-/* Effet au survol */
-.back-to-shop:hover {
-  background-color: #87123b;
-  color: #ffffff;
-  transform: translateX(-3px);
-}
-
-/* Tablettes */
-@media (max-width: 768px) {
-  .back-to-shop {
-    margin: 25px 0 16px 0;
-    gap: 8px;
-    padding: 9px 14px;
-    font-size: 13px;
-  }
-}
-
-/* Téléphones */
-@media (max-width: 480px) {
-  .back-to-shop {
-    margin: 20px 0 12px 0;
-    gap: 7px;
-    padding: 8px 12px;
-    font-size: 12px;
-  }
-}
-
 
