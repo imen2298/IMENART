@@ -50,8 +50,10 @@ function displayCart() {
         cartItemsContainer.innerHTML += `
             <div class="cart-item">
                 <img
-                    src="https://imenart.onrender.com/uploads/${product.image}"
+                    src="${product.image}"
                     alt="${product.title}"
+                    loading="lazy"
+                    decoding="async"
                 >
 
                 <div class="cart-item-info">
